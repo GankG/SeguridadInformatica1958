@@ -25,7 +25,6 @@ char* keymap[] = {
     "[DOWN]", "[PGDN]", "[INSERT]", "[DELETE]", // Arrow keys, etc.
     "", "", "", "", "", "", "", "", "", "", // 90 to 99
     "[LWIN]", "[RWIN]", "[MENU]", "" // Windows keys
-    // Extend as needed for additional keys
 };
 
 char *getEvent();
