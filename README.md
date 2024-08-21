@@ -34,11 +34,11 @@ Para compilar el programa, asegúrate de contar con GCC instalado en tu sistema.
 Debido a que el programa necesita acceder a dispositivos de entrada que requieren permisos elevados, es necesario ejecutarlo como superusuario:
 sudo ./Keylogger
 
-Una vez iniciado, el keylogger comenzará a registrar todas las pulsaciones de teclas en un archivo de log ubicado en /tmp/keylogger.txt.
+Una vez iniciado, el keylogger comenzará a registrar todas las pulsaciones de teclas en un archivo de log ubicado en keylogger.txt.
 
 ## Visualización del Log
 En cualquier momento, puedes revisar el contenido del archivo de log utilizando el siguiente comando:
-cat /tmp/keylogger.txt
+cat keylogger.txt
 
 ## Detener el Programa
 Para detener la ejecución del keylogger, puedes presionar Ctrl + C en la terminal donde se está ejecutando. Alternativamente, si el programa se está ejecutando en segundo plano, puedes detenerlo utilizando comandos como kill.
