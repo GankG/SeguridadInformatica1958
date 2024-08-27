@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f; /* Darker grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.login-container {
+    width: 47%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-top: -10%; /* Adjusted to move the login box upwards */
+}
+
+.login-box {
+    background-color: transparent; /* No background color for the login box */
+    padding: 2.3rem;
+    width: 90%; /* Decreased width by 15% */
+    max-width: 475px; 
+    margin: auto;
+}
+
+.login-title {
+    margin: 0;
+    font-size: 2rem; /* Increase the font size to match the original */
+    text-align: left;
+    font-family: 'Roboto', sans-serif; /* Ensure the font-family matches */
+}
+
+.login-subtitle {
+    margin: 0.5rem 0 2rem;
+    text-align: left;
+    color: #aaa;
+}
+
+.login-subtitle .white-bold {
+    color: #fff;
+    font-weight: bold;
+}
+
+.nexus-mods {
+    color: #ff9b3d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+input {
+    position: relative;
+    padding: 1.35rem; /* Adjust the padding to allow space for label */
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    background-color: #fff;
+    color: #000;
+    width: 90%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff9b3d;
+}
+
+input + label {
+    position: absolute;
+    top: 15px; /* Adjust based on padding */
+    left: 10px;
+    transition: 0.3s ease;
+    pointer-events: none;
+    font-size: 1rem;
+    color: #999;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px; /* Adjust for desired effect */
+    left: 5px;
+    font-size: 0.8rem;
+    color: #ff9b3d;
+}
+
+input.error {
+    border-color: red;
+}
+
+input.error + label {
+    color: red;
+}
+
+.active {
+    top: -10px;
+    left: 5px;
+    font-size: 0.8rem;
+    color: #ff9b3d;
+}
+
+input:placeholder-shown + label {
+    top: 15px;
+    left: 10px;
+    font-size: 1rem;
+    color: #999;
+}
+
+.password {
+    max-width: 500px;
+
+}
+
+.password-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: calc(90% + 46px); /* Increase width to accommodate eye icon */
+}
+
+
+.password-group .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.password-group .password-toggle i {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: #4a90e2;
+}
+
+.eye-icon {
+    width: 30px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.info-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.forgot-password a {
+    color: #aaa;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.forgot-password a span{
+    color: #4a90e2;
+}
+
+#captcha-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#captcha-button {
+    margin-left: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff9b3d;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#captcha-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#captcha-status {
+    color: #00ff00;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff9b3d;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e5892f;
+}
+
+#login-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.register-link {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.register-link a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 0;
+    background-color: #1f1f1f; /* Footer matches the background color */
+}
+
+.footer img.nexus-logo {
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.footer .links {
+    margin: 1rem 0;
+}
+
+.footer .links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer .links a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.background {
+    width: 50%;
+    height: 100%;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+}
+
