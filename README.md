@@ -4,16 +4,17 @@
 Este proyecto es una réplica educativa de la página de inicio de sesión de Nexus Mods, diseñada para enseñar a los usuarios sobre los peligros del phishing. Este ejemplo incluye un sistema de CAPTCHA, animaciones y otras técnicas que suelen emplearse en ataques de phishing reales. Es importante destacar que este proyecto es solo con fines educativos y no debe usarse para actividades malintencionadas.
 
 ## Contenidos
-- Descripción
-- Funcionalidades
-- Requisitos
-- Uso
-- Consideraciones
-- Casos de Uso
-- Asunciones
-- Referencias Legales
-- Créditos
-- Licencia
+- [Descripción](#descripción)
+- [Funcionalidades](#funcionalidades)
+- [Requisitos](#requisitos)
+- [Uso](#uso)
+- [Consideraciones](#consideraciones)
+- [Casos de Uso](#casos-de-uso)
+- [Supuestos del Programa](#supuestos-del-programa)
+- [Referencias Legales](#referencias-legales)
+- [Créditos](#créditos)
+- [Licencia](#licencia)
+
 ## Descripción
 Este proyecto recrea la página de inicio de sesión de Nexus Mods para educar a los usuarios sobre cómo los ciberdelincuentes pueden intentar robar credenciales mediante técnicas de phishing. El proyecto incluye elementos interactivos como un sistema CAPTCHA y la simulación de una redirección a una página engañosa tras un inicio de sesión "exitoso".
 
@@ -61,4 +62,5 @@ Este proyecto está protegido bajo las leyes de derechos de autor y se distribuy
 - Documentación de Javascript: Referencia utilizada para comprender el manejo de los eventos de botones y campos de texto.
 - Documentación de Google Scripts: Utilicé su documentación para realizar el script que pasa la información a una carpeta de drive, en donde se guardan la información en documentos de texto.
 - Stack Overflow: Plataforma de preguntas y respuestas que proporcionó soluciones a problemas específicos durante el desarrollo.
+- ChatGPT: Para realizar este Readme y con ayuda en la estética de la página.
 - Al profesor Daniel Fernando Palma López: Materia de Seguridad Informática.
